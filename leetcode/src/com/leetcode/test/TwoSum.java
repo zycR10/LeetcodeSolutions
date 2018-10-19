@@ -1,23 +1,22 @@
 package com.leetcode.test;
 
-import java.util.LinkedHashMap;
+import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSum {
+	//first test in leetcode.
+	//it's easy to use map to store key-value.
 	public int[] twoSum(int[] nums, int target) {
-		Map<Integer, Integer> map = new LinkedHashMap<>();
-		int[] res = new int[2];
-		for (int i = 0; i < nums.length; i++) {
-			map.put(nums[i], i);
-		}
-		for (int i = 0; i < nums.length; i++) {
-			int a = target - nums[i];
-			if (map.get(a) != null && map.get(a) != i) {
-				res[0] = i;
-				res[1] = map.get(a);
-				break;
-			}
-		}
-		return res;
-	}
+        int[] result = new int[2];
+        Map<Integer,Integer> res = new HashMap<>();
+        for(int i = 0; i < nums.length; i++){
+            if(res.containsKey(target - nums[i])){
+                result[0] = res.get(target - nums[i]);
+                result[1] = i;
+                break;
+            }
+            res.put(nums[i],i);
+        }
+        return result;
+    }
 }
