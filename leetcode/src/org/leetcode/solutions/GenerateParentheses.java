@@ -17,7 +17,8 @@ public class GenerateParentheses {
 	            list.add(str);
 	            return;
 	        }
-	        
+	        // '(' should always be added first
+	        // at least one '(' added, ')' can be added
 	        if(open < max)
 	            backtrack(list, str+"(", open+1, close, max);
 	        if(close < open)
