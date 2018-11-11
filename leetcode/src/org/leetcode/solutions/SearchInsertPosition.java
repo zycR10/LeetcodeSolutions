@@ -2,10 +2,12 @@ package org.leetcode.solutions;
 
 public class SearchInsertPosition {
 	public int searchInsert(int[] nums, int target) {
-		int high = nums.length - 1;
 		int low = 0;
+		int high = nums.length - 1;
+		
+		// make sure not overflow
+		int middle = (high - low) / 2 + low;
 		while (low <= high) {
-			int middle = (high - low) / 2 + low;
 			if (nums[middle] == target) {
 				return middle;
 			}
@@ -16,11 +18,5 @@ public class SearchInsertPosition {
 			}
 		}
 		return low;
-	}
-
-	public static void main(String[] args) {
-		int[] nums = { 1, 3, 5, 6 };
-		int target = 0;
-		new SearchInsertPosition().searchInsert(nums, target);
 	}
 }
