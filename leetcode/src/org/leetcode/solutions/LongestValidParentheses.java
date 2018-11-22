@@ -6,6 +6,7 @@ public class LongestValidParentheses {
     private int longestValidParentheses(String s) {
         int max = 0;
         Stack<Integer> stack = new Stack<>();
+        // for npe
         stack.push(-1);
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '(') {
