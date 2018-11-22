@@ -10,6 +10,7 @@ public class LongestValidParentheses {
         stack.push(-1);
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '(') {
+                // stack record the index of '('
                 stack.push(i);
             } else {
                 stack.pop();
