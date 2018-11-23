@@ -9,6 +9,9 @@ public class SearchinRotatedSortedArray {
             if (nums[mid] == target) {
                 return mid;
             }
+            // such as nums = {4,5,6,7,8,0,1,2,3}, you can think first array is {4,5,6,7,8}
+            // and second array is {0,1,2,3}
+            // check if nums[mid] and target split into different arrays
             boolean split = (nums[mid] >= nums[0]) != (target >= nums[0]);
             if (split) {
                 if (target >= nums[0]) {
