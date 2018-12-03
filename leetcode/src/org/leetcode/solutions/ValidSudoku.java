@@ -1,5 +1,6 @@
 package org.leetcode.solutions;
 
+//test
 public class ValidSudoku {
     public boolean isValidSudoku(char[][] board) {
         for (int i = 0; i < board.length; i++) {
