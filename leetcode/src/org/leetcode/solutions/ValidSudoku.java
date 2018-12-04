@@ -22,10 +22,4 @@ public class ValidSudoku {
         }
         return true;
     }
-
-    public static void main(String[] args) {
-        char[] c = new char[10];
-        c[3] = '8';
-        System.out.println(Character.isDigit(c[3]));
-    }
 }
