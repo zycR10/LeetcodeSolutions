@@ -9,11 +9,15 @@ public class ValidSudoku {
         for (int i = 0; i < 9; ++i) {
             for (int j = 0; j < 9; ++j) {
                 char number = board[i][j];
-                if (number != '.')
+                if (number != '.') {
+                    // number in row
                     if (!seen.add(number + " in row " + i) ||
+                            // number in column
                             !seen.add(number + " in column " + j) ||
+                            // number in gird
                             !seen.add(number + " in block " + i / 3 + "-" + j / 3))
                         return false;
+                }
             }
         }
         return true;
