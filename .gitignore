@@ -7,7 +7,7 @@
 /.project
 /.idea
 /.idea/*
-
+*.class
 /*.iml
 /.externalToolBuilders
 /.git
