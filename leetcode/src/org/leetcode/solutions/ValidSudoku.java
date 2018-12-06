@@ -1,54 +1,25 @@
 package org.leetcode.solutions;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class ValidSudoku {
     public boolean isValidSudoku(char[][] board) {
-        for (int i = 0; i < board.length; i++) {
-            if (i % 3 == 0) {
-                if (!validateGird(board, i)) {
-                    return false;
-                }
-            }
-            if (!validateRowAndColumn(board, i)) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    private boolean validateRowAndColumn(char[][] board, int n) {
-        char[] row = board[n];
-        char[] valid = new char[9];
-        int index = 0;
-        for (int i = 0; i < row.length; i++) {
-            index = row[i] - '1';
-            if (Character.isDigit(valid[index])) {
-                return false;
-            } else {
-                valid[index] = row[i];
-            }
-        }
-        return true;
-    }
-
-    private boolean validateGird(char[][] board, int n) {
-        int index = 0;
-        char[] gird = new char[9];
-        for (int i = 0; i < 3; i++, n++) {
-            for (int j = 0; j < 3; j++) {
-                index = board[n][n] - '1';
-                if (Character.isDigit(gird[index])) {
-                    return false;
-                } else {
-                    gird[index] = board[n][n + j];
+        Set seen = new HashSet();
+        for (int i = 0; i < 9; ++i) {
+            for (int j = 0; j < 9; ++j) {
+                char number = board[i][j];
+                if (number != '.') {
+                    // number in row
+                    if (!seen.add(number + " in row " + i) ||
+                            // number in column
+                            !seen.add(number + " in column " + j) ||
+                            // number in gird
+                            !seen.add(number + " in block " + i / 3 + "-" + j / 3))
+                        return false;
                 }
             }
         }
         return true;
-    }
-
-    public static void main(String[] args) {
-        char[] c = new char[10];
-        c[3] = '8';
-        System.out.println(Character.isDigit(c[3]));
     }
 }
