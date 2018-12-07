@@ -1,5 +1,7 @@
 package org.leetcode.solutions;
 
+import org.leetcode.domain.TreeNode;
+
 public class LCAofBST {
 	public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 		if (root.val < Math.min(p.val, q.val)) {
