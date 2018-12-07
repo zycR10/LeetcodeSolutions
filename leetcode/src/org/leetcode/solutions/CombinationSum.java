@@ -42,19 +42,30 @@ public class CombinationSum {
         return res;
     }
 
-    private void backTrack(int sum, int[] candidates, List<Integer> currList, List<List<Integer>> res, int target, int start) {
+    private int backTrack(int sum, int[] candidates, List<Integer> currList, List<List<Integer>> res, int target, int start) {
         if (sum > target) {
-            return;
+            return 1;
         }
         if (sum == target) {
             res.add(new ArrayList<>(currList));
+            return 0;
         }else {
             for (int i = start; i < candidates.length; i++) {
-                sum += candidates[i];
                 currList.add(candidates[i]);
-                backTrack(sum, candidates, currList, res, target, i);
+                int sumResult = backTrack(sum + candidates[i], candidates, currList, res, target, i);
                 currList.remove(currList.size() - 1);
+                // arrays has been sorted, if sum > target or sum = target
+                // means it's obviously sum + next element > target, so we can break the loop here.
+                if (sumResult != -1) {
+                    break;
+                }
             }
         }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        int[] candidates = {2,3,6,7};
+        new CombinationSum().combinationSum(candidates, 7);
     }
 }

@@ -1,5 +1,7 @@
 package org.leetcode.solutions;
 
+import org.leetcode.domain.TreeNode;
+
 public class MinimumAbsoluteDifference {
 	private int min = Integer.MAX_VALUE;
 	private Integer prev = null;
