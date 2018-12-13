@@ -1,8 +1,5 @@
 package org.leetcode.solutions;
 
-import java.util.Map;
-import java.util.Stack;
-
 /**
  * Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
  * <p>
@@ -25,7 +22,7 @@ public class TrappingRainWater {
         int leftmax = 0;
         int rightmax = 0;
         while (a <= b) {
-            // keep looking max by both side
+            // keep looking max by left side
             leftmax = Math.max(leftmax, height[a]);
             rightmax = Math.max(rightmax, height[b]);
             if (leftmax < rightmax) {
