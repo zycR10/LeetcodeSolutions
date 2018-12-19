@@ -22,6 +22,8 @@ import javax.sound.midi.SysexMessage;
  * @Date: 2018/12/19 10:45
  */
 public class JumpGameII {
+    // find from the last one
+    // too slow, repeat too many useless step.
 //    public int jump(int[] nums) {
 //        if(nums.length <= 1) {
 //            return 0;
@@ -47,7 +49,11 @@ public class JumpGameII {
     public int jump(int[] A) {
         int jumps = 0, curEnd = 0, curFarthest = 0;
         for (int i = 0; i < A.length - 1; i++) {
+            // greedy algorithm
+            // find the farthest in this and next step
             curFarthest = Math.max(curFarthest, i + A[i]);
+            // curEnd means A[i] can jump to [curStart, curEnd]
+            // loop from start to end, find current jump + next jump(A[i])
             if (i == curEnd) {
                 jumps++;
                 curEnd = curFarthest;
