@@ -49,7 +49,7 @@ public class JumpGameII {
     public int jump(int[] A) {
         int jumps = 0, curEnd = 0, curFarthest = 0;
         for (int i = 0; i < A.length - 1; i++) {
-            // greedy algorithm
+            // like greedy algorithm
             // find the farthest in this and next step
             curFarthest = Math.max(curFarthest, i + A[i]);
             // curEnd means A[i] can jump to [curStart, curEnd]
