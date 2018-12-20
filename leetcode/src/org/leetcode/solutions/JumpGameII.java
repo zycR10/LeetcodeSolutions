@@ -1,9 +1,5 @@
 package org.leetcode.solutions;
 
-import sun.applet.Main;
-
-import javax.sound.midi.SysexMessage;
-
 /**
  * Given an array of non-negative integers, you are initially positioned at the first index of the array.
  * <p>
