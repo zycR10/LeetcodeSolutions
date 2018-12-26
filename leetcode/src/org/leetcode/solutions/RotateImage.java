@@ -47,49 +47,30 @@ package org.leetcode.solutions;
  */
 public class RotateImage {
     public void rotate(int[][] matrix) {
-        int half = matrix.length / 2;
-        for(int i=0; i < half; i++) {
-            rotateColumn(matrix, i);
-        }
-    }
-
-    private void rotateColumn(int[][] matrix, int i) {
-        int size = matrix.length;
-        int[] left = new int[size];
-        int[] right = new int[size];
-        int[] up = new int[size];
-        int[] down = new int[size];
-        int[] temp = new int[size];
-        int[] temp2 = new int[size];
-        for(int j = 0; j < size; j++) {
-            left[j] = matrix[size - j - 1][i];
-            right[j] = matrix[size - j - 1][size - i - 1];
-            up[j] = matrix[i][j];
-            down[j] = matrix[size - i - 1][j];
-        }
-        temp = up;
-        up = left;
-        left = temp;
-        temp = down;
-        down = right;
-        right = left;
-        left = temp;
-        for(int j = 0; j < size; j++) {
-            matrix[j][i] = left[j];
-            matrix[j][size - i - 1] = right[j];
-            matrix[i][j] = up[j];
-            matrix[size - i - 1][j] = down[j];
+        int n = matrix.length;
+        // rotate array means rotate element
+        // every time 4 elements
+        for (int i = 0; i < n / 2; i++) {
+            for (int j = i; j < n - i - 1; j++) {
+                int tmp = matrix[i][j];
+                matrix[i][j] = matrix[n - j - 1][i];
+                matrix[n - j - 1][i] = matrix[n - i - 1][n - j - 1];
+                matrix[n - i - 1][n - j - 1] = matrix[j][n - i - 1];
+                matrix[j][n - i - 1] = tmp;
+            }
         }
     }
 
     public static void main(String[] args) {
-        int[][] matrix = new int[3][3];
-        int[] one = {1,2,3};
-        int[] two = {4,5,6};
-        int[] three = {7,8,9};
+        int[][] matrix = new int[4][4];
+        int[] one = {1, 2, 3, 4};
+        int[] two = {5, 6, 7, 8};
+        int[] three = {9, 10, 11, 12};
+        int[] four = {13, 14, 15, 16};
         matrix[0] = one;
         matrix[1] = two;
         matrix[2] = three;
+        matrix[3] = four;
         new RotateImage().rotate(matrix);
     }
 }
