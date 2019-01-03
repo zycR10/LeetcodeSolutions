@@ -29,12 +29,13 @@ public class JumpGame {
         // from first index calculate max reach index
         // if i larger than max, means the last index is inaccessible
         // if i smaller than max, means i must can be reached, so compare
-        for(int i=0; i < len-1; i++){
-            if(i > max_reach)
+        for (int i = 0; i < len - 1; i++) {
+            if (i > max_reach) {
                 break;
-            max_reach = Math.max(max_reach,i+nums[i]);
+            }
+            max_reach = Math.max(max_reach, i + nums[i]);
         }
-        return (max_reach >= len-1);
+        return max_reach >= len - 1;
     }
 
 }
