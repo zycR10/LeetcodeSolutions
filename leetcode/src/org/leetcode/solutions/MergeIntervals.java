@@ -54,13 +54,12 @@ public class MergeIntervals {
         Arrays.sort(start);
         Arrays.sort(end);
 
-        for (int i = 0, j = 0; i < intervals.size(); ) {
+        for (int i = 0, j = 0; i < intervals.size(); j++) {
             while (j + 1 < intervals.size() && start[j + 1] <= end[j]) {
                 j++;
             }
             res.add(new Interval(start[i], end[j]));
             i = j + 1;
-            j++;
         }
         return res;
     }
