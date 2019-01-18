@@ -21,6 +21,22 @@ package org.leetcode.solutions;
  */
 public class MinimumPathSum {
     public int minPathSum(int[][] grid) {
-
+        if (grid == null) {
+            return 0;
+        }
+        int row = grid.length;
+        int colum = grid[0].length;
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < colum; j++) {
+                if (i == 0 && j != 0) {
+                    grid[i][j] = grid[i][j] + grid[i][j - 1];
+                } else if (i != 0 && j == 0) {
+                    grid[i][j] = grid[i][j] + grid[i - 1][j];
+                } else if (i != 0 && j != 0) {
+                    grid[i][j] = grid[i][j] + Math.min(grid[i - 1][j], grid[i][j - 1]);
+                }
+            }
+        }
+        return grid[row - 1][colum - 1];
     }
 }
