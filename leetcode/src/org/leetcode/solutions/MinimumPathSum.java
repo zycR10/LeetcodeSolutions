@@ -52,7 +52,9 @@ public class MinimumPathSum {
         if (row >= grid.length || column >= grid[0].length) {
             return Integer.MAX_VALUE;
         }
-        res[row][column] = grid[row][column] + Math.min(minPathSum(grid, row + 1, column, res), minPathSum(grid, row, column + 1, res));
+        if (res[row][column] == 0) {
+            res[row][column] = grid[row][column] + Math.min(minPathSum(grid, row + 1, column, res), minPathSum(grid, row, column + 1, res));
+        }
         return res[row][column];
     }
 }
