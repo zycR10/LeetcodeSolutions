@@ -39,4 +39,20 @@ public class MinimumPathSum {
         }
         return grid[row - 1][colum - 1];
     }
+
+    public int minPathSum2(int[][] grid) {
+        int[][] res = new int[grid.length][grid[0].length];
+        return minPathSum(grid, 0 ,0, res);
+    }
+
+    private int minPathSum(int[][] grid, int row, int column, int[][] res) {
+        if (row == grid.length - 1 && column == grid[0].length - 1) {
+            return grid[row][column];
+        }
+        if (row >= grid.length || column >= grid[0].length) {
+            return Integer.MAX_VALUE;
+        }
+        res[row][column] = grid[row][column] + Math.min(minPathSum(grid, row + 1, column, res), minPathSum(grid, row, column + 1, res));
+        return res[row][column];
+    }
 }
