@@ -36,41 +36,24 @@ import java.util.Set;
  */
 public class UniquePathsII {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
-        Set<Integer> rowSet = new HashSet<>();
-        Set<Integer> columnSet = new HashSet<>();
-        int rowLength = obstacleGrid.length;
-        int columnLength = obstacleGrid[0].length;
-        int result = 1;
-        if (rowLength == 0 || columnLength == 0) {
-            return 0;
-        }
-        if (rowLength == 1 || columnLength == 1) {
-            return 1;
-        }
-        for (int i = 0; i < rowLength; i++) {
-            for (int j = 0; j < columnLength; j++) {
-                if (obstacleGrid[i][j] == 1) {
-                    rowSet.add(i);
-                    columnSet.add(j);
-                }
+        int width = obstacleGrid[0].length;
+        int[] dp = new int[width];
+        dp[0] = 1;
+        // dp solution
+        // if has 1, reset current dp[j] = 0
+        for (int[] row : obstacleGrid) {
+            for (int j = 0; j < width; j++) {
+                if (row[j] == 1)
+                    dp[j] = 0;
+                else if (j > 0)
+                    dp[j] += dp[j - 1];
             }
         }
-        rowLength = rowLength - rowSet.size();
-        columnLength = columnLength - columnSet.size();
-        if (rowLength < columnLength) {
-            int temp = rowLength;
-            rowLength = columnLength;
-            columnLength = temp;
-        }
-        for (int n = 1; n < columnLength; n++) {
-            result *= columnLength + rowLength - n - 1;
-            result /= n;
-        }
-        return result;
+        return dp[width - 1];
     }
 
     public static void main(String[] args) {
-        int[][] obstacleGrid = {{0,0,0},{0,1,0},{0,0,0}};
-        new UniquePathsII().uniquePathsWithObstacles(obstacleGrid);
+        int[][] obstacleGrid = {{0,0,0,0,0,0,0},{0,0,0,0,0,0,0},{0,0,0,0,0,0,0}};
+        System.out.println(new UniquePathsII().uniquePathsWithObstacles(obstacleGrid));
     }
 }

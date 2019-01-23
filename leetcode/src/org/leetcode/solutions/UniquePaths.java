@@ -34,7 +34,24 @@ public class UniquePaths {
         return (int) res;
     }
 
+    public int uniquePathsByDP(int m, int n) {
+        if (m == 0 || n == 0) {
+            return 0;
+        }
+        int[] res = new int[n];
+        res[0] = 1;
+        for(int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (j == 0) {
+                    continue;
+                }
+                res[j] += res[j - 1];
+            }
+        }
+        return res[n - 1];
+    }
+
     public static void main(String[] args) {
-        System.out.println(new UniquePaths().uniquePaths(51, 9));
+        System.out.println(new UniquePaths().uniquePaths(3, 2));
     }
 }
