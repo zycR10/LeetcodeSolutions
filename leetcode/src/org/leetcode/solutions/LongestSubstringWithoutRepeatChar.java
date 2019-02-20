@@ -93,6 +93,25 @@ public class LongestSubstringWithoutRepeatChar {
         return max;
     }
 
+    public int lengthOfLongestSubstring2(String s) {
+        int[] a = new int[256];
+        int max = 0;
+        int rep = 0;
+        for (int i = 1; i <= s.length(); ++i) {
+            int c = s.charAt(i - 1);
+            // rep for track the begin of characters
+            // once a[c] is not 0, means this letter is the second one.
+            rep = Math.max(rep, a[c]);
+            // calculate from length between duplicate letters
+            int count = i - rep;
+            if (count > max)
+                max = count;
+            // record every letter's position.
+            a[c] = i;
+        }
+        return max;
+    }
+
     public static void main(String[] args) {
         System.out.println(new LongestSubstringWithoutRepeatChar().lengthOfLongestSubstring(""));
     }
