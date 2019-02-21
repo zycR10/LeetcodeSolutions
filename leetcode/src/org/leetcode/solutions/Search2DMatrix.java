@@ -57,6 +57,7 @@ public class Search2DMatrix {
         int low = 0;
         int high = array.length - 1;
         while (low <= high) {
+            // in case high + low is overflow
             int mid = (high - low) / 2 + low;
             if (array[mid] == target) {
                 return true;
