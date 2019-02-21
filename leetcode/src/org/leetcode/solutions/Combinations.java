@@ -1,5 +1,6 @@
 package org.leetcode.solutions;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -23,6 +24,41 @@ import java.util.List;
  */
 public class Combinations {
     public List<List<Integer>> combine(int n, int k) {
+        List<List<Integer>> res = new ArrayList<>();
+        List<Integer> combination = new ArrayList<>();
+//        dfs(n, k, 0, 1, res, combination);
+        dfs2(n, k, 1, res, combination);
+        return res;
+    }
 
+    private void dfs(int n, int k, int index, int value, List<List<Integer>> res, List<Integer> combination) {
+        if (index == k) {
+            res.add(new ArrayList<>(combination));
+            return;
+        }
+        for (int i = value; i <= n; i++) {
+            combination.add(value);
+            dfs(n, k, index + 1, ++value, res, combination);
+            combination.remove(combination.size() - 1);
+        }
+    }
+
+    private void dfs2(int n, int k, int start, List<List<Integer>> res, List<Integer> combination) {
+        if (k == 0) {
+            res.add(new ArrayList<>(combination));
+            return;
+        }
+        // n-k+1
+        // n means list size is n, so you need n elements, that means when only left n - 1 elements, this loop is over
+        // so you should loop k - (n - 1) times
+        for (int i = start; i <= n - k + 1; i++) {
+            combination.add(i);
+            dfs2(n, k - 1, i + 1, res, combination);
+            combination.remove(combination.size() - 1);
+        }
+    }
+
+    public static void main(String[] args) {
+        new Combinations().combine(4, 2);
     }
 }
