@@ -17,6 +17,33 @@ import org.leetcode.domain.ListNode;
  */
 public class ReverseLinkedListII {
     public ListNode reverseBetween(ListNode head, int m, int n) {
-
+        if (m == n) {
+            return head;
+        }
+        ListNode fakeNode = new ListNode(0);
+        fakeNode.next = head;
+        ListNode mListNode = new ListNode(0);
+        ListNode nListNode = new ListNode(0);
+        ListNode premListNode = new ListNode(0);
+        ListNode node = fakeNode;
+        for (int i = 0; i < n; i ++) {
+            if (i == m - 2) {
+                premListNode = node;
+            }
+            if (i == m - 1) {
+                mListNode = node;
+            }
+            if (i == n - 1) {
+                nListNode = node.next;
+            }
+            node = node.next;
+        }
+        for (int i = m; i < n; i ++) {
+            mListNode.next = nListNode;
+            nListNode = mListNode;
+            mListNode = mListNode.next;
+        }
+        premListNode.next = nListNode;
+        return fakeNode.next;
     }
 }
