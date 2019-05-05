@@ -24,7 +24,7 @@ public class UniqueBinarySearchTrees {
         // core idea is which element is root
         // smallest element is root, left subtree is null
         // biggest element is root, right subtree is null
-        // others assume root is a, left subtree is f(n - 1), right subtree is f
+        // others assume root is a, left subtree is f(a - 1), right subtree is f(n - a)
         int[] array = new int[n + 1];
         array[0] = 1;
         array[1] = 1;
