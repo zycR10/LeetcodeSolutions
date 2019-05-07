@@ -22,6 +22,7 @@
 */.project
 */.idea
 */*.iml
+*/*.class
 */.externalToolBuilders
 */.git
 .DS_Store
