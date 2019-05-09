@@ -10,31 +10,31 @@ import java.util.*;
  */
 public class BinaryTreeZigzagLevelOrderTraversal {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-        if (root == null) {
-            return new ArrayList<>();
-        }
         List<List<Integer>> res = new ArrayList<>();
-//        Queue<TreeNode> queue = new LinkedList<>();
-//        queue.offer(root);
-        Stack<TreeNode> stack = new Stack<>();
-        Stack<TreeNode> nextStack = new Stack<>();
-        stack.push(root);
-        List<Integer> list = new ArrayList<>();
-        TreeNode node;
-        int i = 1;
-        while (!stack.isEmpty()) {
-            node = stack.pop();
-            if (node != null) {
-                list.add(node.val);
-                nextStack.push(node.left);
-                nextStack.push(node.right);
-            }
-            if (--i == 0) {
-                res.add(new ArrayList<>(list));
-                list.clear();
-            }
-            i *= 2;
-        }
+        travel(root, res, 0);
         return res;
+    }
+
+    private void travel(TreeNode curr, List<List<Integer>> res, int level) {
+        if (curr == null) {
+            return;
+        }
+
+        if (res.size() <= level) {
+            List<Integer> newLevel = new LinkedList<>();
+            res.add(newLevel);
+        }
+
+        List<Integer> collection = res.get(level);
+        if (level % 2 == 0) {
+            collection.add(curr.val);
+        } else {
+            // to be honest, this answer copy from discussion under this problem
+            // I totally forget method #add(index, val)
+            collection.add(0, curr.val);
+        }
+
+        travel(curr.left, res, level + 1);
+        travel(curr.right, res, level + 1);
     }
 }
