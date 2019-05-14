@@ -25,18 +25,35 @@ import org.leetcode.domain.TreeNode;
  */
 public class ConstructBinaryTreefromPreorderandInorderTraversal {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
-        int rootVal = preorder[0];
-        int index = 0;
-        for (int i = 0; i < inorder.length; i ++) {
-            if (rootVal == inorder[i]) {
-                index = i;
-            }
-        }
-        return constructTree(index, preorder, inorder);
+        return constructTree(0, inorder.length - 1, preorder, inorder, 0);
     }
 
-    private TreeNode constructTree(int index, int[] preorder, int[] inorder) {
-        TreeNode node = new TreeNode(inorder[index]);
+    private TreeNode constructTree(int start, int end, int[] preorder, int[] inorder, int index) {
+        if (start == end) {
+            return new TreeNode(inorder[start]);
+        }
+        int root = preorder[index];
+        TreeNode node = new TreeNode(-1);
+        int rootIndex = 0;
+        for (int i = start; i <= end; i++) {
+            if (inorder[i] == root) {
+                node = new TreeNode(root);
+                rootIndex = i;
+                break;
+            }
+        }
+        if (rootIndex != 0) {
+            node.left = constructTree(start, rootIndex - 1, preorder, inorder, ++index);
+        }
+//        if (rootIndex != inorder.length - 1) {
+            node.right = constructTree(rootIndex + 1, end, preorder, inorder, ++index);
+//        }
+        return node;
+    }
 
+    public static void main(String[] args) {
+        int[] preorder = {1, 2, 3};
+        int[] inorder = {1, 3, 2};
+        new ConstructBinaryTreefromPreorderandInorderTraversal().buildTree(preorder, inorder);
     }
 }
