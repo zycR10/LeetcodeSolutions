@@ -42,18 +42,19 @@ public class ConstructBinaryTreefromPreorderandInorderTraversal {
                 break;
             }
         }
-        if (rootIndex != 0) {
+        if (start <= rootIndex - 1) {
             node.left = constructTree(start, rootIndex - 1, preorder, inorder, ++index);
         }
-//        if (rootIndex != inorder.length - 1) {
-            node.right = constructTree(rootIndex + 1, end, preorder, inorder, ++index);
-//        }
+        if (rootIndex + 1 <= end) {
+            node.right = constructTree(rootIndex + 1, end, preorder, inorder, Math.max(rootIndex, index) + 1);
+        }
         return node;
     }
 
     public static void main(String[] args) {
-        int[] preorder = {1, 2, 3};
-        int[] inorder = {1, 3, 2};
-        new ConstructBinaryTreefromPreorderandInorderTraversal().buildTree(preorder, inorder);
+        int[] preorder = {7,-10,-4,3,-1,2,-8,11};
+        int[] inorder = {-4,-10,3,-1,7,11,-8,2};
+        TreeNode node = new ConstructBinaryTreefromPreorderandInorderTraversal().buildTree(preorder, inorder);
+        System.out.println(node);
     }
 }
