@@ -29,31 +29,25 @@ public class ConstructBinaryTreefromPreorderandInorderTraversal {
     }
 
     private TreeNode constructTree(int start, int end, int[] preorder, int[] inorder, int index) {
-        if (start == end) {
-            return new TreeNode(inorder[start]);
+        if (start > end || index > preorder.length - 1) {
+            return null;
         }
-        int root = preorder[index];
-        TreeNode node = new TreeNode(-1);
+        TreeNode node = new TreeNode(preorder[index]);
         int rootIndex = 0;
         for (int i = start; i <= end; i++) {
-            if (inorder[i] == root) {
-                node = new TreeNode(root);
+            if (inorder[i] == node.val) {
                 rootIndex = i;
                 break;
             }
         }
-        if (start <= rootIndex - 1) {
-            node.left = constructTree(start, rootIndex - 1, preorder, inorder, ++index);
-        }
-        if (rootIndex + 1 <= end) {
-            node.right = constructTree(rootIndex + 1, end, preorder, inorder, Math.max(rootIndex, index) + 1);
-        }
+        node.left = constructTree(start, rootIndex - 1, preorder, inorder, index + 1);
+        node.right = constructTree(rootIndex + 1, end, preorder, inorder, index + rootIndex - start + 1);
         return node;
     }
 
     public static void main(String[] args) {
-        int[] preorder = {7,-10,-4,3,-1,2,-8,11};
-        int[] inorder = {-4,-10,3,-1,7,11,-8,2};
+        int[] preorder = {4, 1, 2, 3};
+        int[] inorder = {1, 2, 3, 4};
         TreeNode node = new ConstructBinaryTreefromPreorderandInorderTraversal().buildTree(preorder, inorder);
         System.out.println(node);
     }
