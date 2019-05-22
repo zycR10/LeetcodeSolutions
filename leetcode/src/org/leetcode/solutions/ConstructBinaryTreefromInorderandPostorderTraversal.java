@@ -28,14 +28,14 @@ public class ConstructBinaryTreefromInorderandPostorderTraversal {
         return constructTree(0, inorder.length - 1, inorder, postorder, postorder.length - 1);
     }
 
-    private TreeNode constructTree (int start, int end, int[] inorder, int[] postorder, int index) {
-        if (start > end || index < start) {
+    private TreeNode constructTree(int start, int end, int[] inorder, int[] postorder, int index) {
+        if (start > end || index < 0) {
             return null;
         }
 
         TreeNode node = new TreeNode(postorder[index]);
         int rootIndex = -1;
-        for (int i = start; i < end; i++) {
+        for (int i = start; i <= end; i++) {
             if (inorder[i] == node.val) {
                 rootIndex = i;
                 break;
@@ -45,5 +45,12 @@ public class ConstructBinaryTreefromInorderandPostorderTraversal {
         node.right = constructTree(rootIndex + 1, end, inorder, postorder, index - 1);
         node.left = constructTree(start, rootIndex - 1, inorder, postorder, index - (end - rootIndex) - 1);
         return node;
+    }
+
+    public static void main(String[] args) {
+        int[] inorder = {9, 3, 15, 20, 7};
+        int[] postorder = {9, 15, 7, 20, 3};
+        TreeNode node = new ConstructBinaryTreefromInorderandPostorderTraversal().buildTree(inorder, postorder);
+        System.out.println(node);
     }
 }
