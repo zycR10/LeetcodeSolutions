@@ -1,6 +1,7 @@
 package org.leetcode.solutions;
 
 import org.leetcode.domain.ListNode;
+import org.leetcode.domain.ListNodeUtils;
 import org.leetcode.domain.TreeNode;
 
 import java.util.LinkedList;
@@ -50,9 +51,15 @@ public class ConvertSortedListtoBinarySearchTree {
         TreeNode node = new TreeNode(0);
         TreeNode root = node;
         for (int i = end; i >= start; i--) {
-            node.left = new TreeNode(nodes.get(end));
+            node.left = new TreeNode(nodes.get(i));
             node = node.left;
         }
         return root.left;
+    }
+
+    public static void main(String[] args) {
+        String input = "[0,1,2,3,4,5]";
+        ListNode node = ListNodeUtils.stringToListNode(input);
+        new ConvertSortedListtoBinarySearchTree().sortedListToBST(node);
     }
 }
