@@ -29,32 +29,27 @@ import java.util.List;
  */
 public class ConvertSortedListtoBinarySearchTree {
     public TreeNode sortedListToBST(ListNode head) {
-        if (head == null) {
-            return null;
-        }
-        List<Integer> nodes = new LinkedList<>();
-        while (head != null) {
-            nodes.add(head.val);
-            head = head.next;
-        }
-        int index = nodes.size() / 2;
-        TreeNode root = new TreeNode(nodes.get(index));
-        root.left = constructTree(nodes, 0, index - 1);
-        root.right = constructTree(nodes, index + 1, nodes.size() - 1);
-        return root;
+        return sortedListToBST(head, null);
     }
 
-    private TreeNode constructTree(List<Integer> nodes, int start, int end) {
-        if (start > end) {
+    private TreeNode sortedListToBST(ListNode start, ListNode end) {
+
+        if (start == null || start == end)
             return null;
+
+        ListNode fast = start;
+        ListNode slow = start;
+
+        while (fast.next != end && fast.next.next != end) {
+            fast = fast.next.next;
+            slow = slow.next;
         }
-        TreeNode node = new TreeNode(0);
-        TreeNode root = node;
-        for (int i = end; i >= start; i--) {
-            node.left = new TreeNode(nodes.get(i));
-            node = node.left;
-        }
-        return root.left;
+
+        TreeNode root = new TreeNode(slow.val);
+        root.left = sortedListToBST(start, slow);
+        root.right = sortedListToBST(slow.next, end);
+
+        return root;
     }
 
     public static void main(String[] args) {
