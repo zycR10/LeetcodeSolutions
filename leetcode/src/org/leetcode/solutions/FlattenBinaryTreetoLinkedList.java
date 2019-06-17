@@ -31,9 +31,17 @@ import org.leetcode.domain.TreeNode;
  */
 public class FlattenBinaryTreetoLinkedList {
     public void flatten(TreeNode root) {
-        if (root == null) {
+        TreeNode prev = null;
+        constructLeftTree(root, prev);
+    }
+
+    private void constructLeftTree(TreeNode root, TreeNode prev) {
+        if (root == null)
             return;
-        }
-        constructLeftTree(root);
+        constructLeftTree(root.right, prev);
+        constructLeftTree(root.left, prev);
+        root.right = prev;
+        root.left = null;
+        prev = root;
     }
 }
