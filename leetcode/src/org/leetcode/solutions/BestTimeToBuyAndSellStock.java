@@ -41,23 +41,37 @@ public class BestTimeToBuyAndSellStock {
     }
 
     public int maxProfitII(int[] prices) {
+        if (prices == null) {
+            return 0;
+        }
+        int max = 0;
+        int low = 0;
+        int fast = 1;
+        while (fast < prices.length) {
+            if (prices[fast] > prices[low]) {
+                max = Math.max(max, prices[fast] - prices[low]);
+            } else {
+                low = fast;
+            }
+            fast++;
+        }
+        return max;
+    }
+
+    public int maxProfitIII(int[] prices) {
         if (prices == null || prices.length == 0) {
             return 0;
         }
-        int mid = prices.length / 2;
-        int midValue = prices[mid];
-        int leftTemp = 0;
-        int rightTemp = 0;
-        for (int i = mid; i >= 0; i--) {
-            if (prices[i] < midValue) {
-                leftTemp = Math.max(leftTemp, midValue - prices[i]);
+        int max = 0;
+        int min = prices[0];
+        int index = 1;
+        while (index < prices.length) {
+            if (prices[index] > min) {
+                max = Math.max(max, prices[index] - min);
+            } else {
+                min = prices[index];
             }
         }
-        for (int i = mid + 1; i < prices.length - 1; i++) {
-            if (prices[i] > midValue) {
-                rightTemp = Math.max(rightTemp, prices[i] - midValue);
-            }
-        }
-        return leftTemp + rightTemp;
+        return max;
     }
 }
