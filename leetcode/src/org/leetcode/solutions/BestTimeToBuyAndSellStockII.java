@@ -30,4 +30,20 @@ package org.leetcode.solutions;
  * @Date: 2019/7/5 12:24
  */
 public class BestTimeToBuyAndSellStockII {
+    public int maxProfit(int[] prices) {
+        if (prices == null || prices.length == 0) {
+            return 0;
+        }
+        int sum = 0;
+        for (int i = 1; i < prices.length; i++) {
+            // if tomorrow is more expensive than today, you should buy today and sell tomorrow
+            sum += Math.max(0, prices[i] - prices[i - 1]);
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        int[] prices = {1, 2, 3, 4, 5};
+        System.out.println(new BestTimeToBuyAndSellStockII().maxProfit(prices));
+    }
 }
