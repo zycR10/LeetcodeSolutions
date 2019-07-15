@@ -35,26 +35,34 @@ public class BestTimeToBuyAndSellStockIII {
             return 0;
         }
         int max1 = 0;
-        int min = prices[0];
-        int index = 1;
-        while (index < prices.length) {
-            if (prices[index] > min) {
-                max1 = Math.max(max1, prices[index] - min);
+        int max2 = 0;
+        int currMax = 0;
+        int minIndex = 0;
+        for (int i = 1; i < prices.length; i++) {
+            if (prices[i] - prices[i - 1] > 0) {
+                currMax = Math.max(currMax, prices[i] - prices[minIndex]);
             } else {
-                min = prices[index];
+                if (currMax > max1) {
+                    max2 = max1;
+                    max1 = currMax;
+                } else if (currMax > max2) {
+                    max2 = currMax;
+                }
+                currMax = 0;
+                minIndex = i;
             }
         }
-
-        int max2 = 0;
-        for (int i = 1; i < prices.length; i++) {
-            // if tomorrow is more expensive than today, you should buy today and sell tomorrow
-            max2 += Math.max(0, prices[i] - prices[i - 1]);
+        if (currMax > max1) {
+            max2 = max1;
+            max1 = currMax;
+        } else if (currMax > max2) {
+            max2 = currMax;
         }
-        return Math.max(max1, max2);
+        return max1 + max2;
     }
 
     public static void main(String[] args) {
-        int[] prices = {3, 3, 5, 0, 0, 3, 1, 4};
+        int[] prices = {1, 2, 4, 2, 5, 7, 2, 4, 9, 0};
         System.out.println(new BestTimeToBuyAndSellStockIII().maxProfit(prices));
     }
 }
