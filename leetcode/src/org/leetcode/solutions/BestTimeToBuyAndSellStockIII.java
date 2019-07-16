@@ -31,34 +31,23 @@ package org.leetcode.solutions;
  */
 public class BestTimeToBuyAndSellStockIII {
     public int maxProfit(int[] prices) {
-        if (prices == null || prices.length == 0) {
-            return 0;
+        int buyOne = Integer.MAX_VALUE, buyTwo = Integer.MAX_VALUE;
+        int sellOne = 0, sellTwo =  0;
+        for (int price : prices) {
+            // same as just one trans, keep looking minimum buy and the most profit.
+            buyOne = Math.min(buyOne, price);
+            sellOne = Math.max(sellOne, price - buyOne);
+
+            // if you have earn 100, and today you need pay 300, you can say today cost you 200
+            // because 100 is your profit, this buyTwo can be seen store sellOne status
+            // based on sellOne, now you can use the same way to look the most profit by two trans.
+            buyTwo = Math.min(buyTwo, price - sellOne);
+            sellTwo = Math.max(sellTwo, price - buyTwo);
         }
-        int max1 = 0;
-        int max2 = 0;
-        int currMax = 0;
-        int minIndex = 0;
-        for (int i = 1; i < prices.length; i++) {
-            if (prices[i] - prices[i - 1] > 0) {
-                currMax = Math.max(currMax, prices[i] - prices[minIndex]);
-            } else {
-                if (currMax > max1) {
-                    max2 = max1;
-                    max1 = currMax;
-                } else if (currMax > max2) {
-                    max2 = currMax;
-                }
-                currMax = 0;
-                minIndex = i;
-            }
-        }
-        if (currMax > max1) {
-            max2 = max1;
-            max1 = currMax;
-        } else if (currMax > max2) {
-            max2 = currMax;
-        }
-        return max1 + max2;
+        // why return sellTwo, because sellTwo is always >= sellOne
+        // if only one trans means the price is always go up, so price - buyTwo = price - (price - sellOne) = sellOne
+        // sellTwo = Math.max(sellTwo, sellOne) = sellOne (sellOne is calculate first, and sellTwo is zero)
+        return sellTwo;
     }
 
     public static void main(String[] args) {
