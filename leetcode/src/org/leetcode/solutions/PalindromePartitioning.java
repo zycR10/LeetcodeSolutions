@@ -1,5 +1,6 @@
 package org.leetcode.solutions;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,6 +22,10 @@ import java.util.List;
  */
 public class PalindromePartitioning {
     public List<List<String>> partition(String s) {
-
+        if (s == null || "".equals(s)) {
+            return null;
+        }
+        List<List<String>> res = new ArrayList<>();
+        partitionPalindrome(s, );
     }
 }
