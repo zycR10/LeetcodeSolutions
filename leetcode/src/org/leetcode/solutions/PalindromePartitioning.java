@@ -26,6 +26,6 @@ public class PalindromePartitioning {
             return null;
         }
         List<List<String>> res = new ArrayList<>();
-        partitionPalindrome(s, );
+//        partitionPalindrome(s, );
     }
 }

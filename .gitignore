@@ -22,7 +22,7 @@
 */.project
 */.idea
 */*.iml
-*/*.class
+*.class
 */.externalToolBuilders
 */.git
 .DS_Store
@@ -30,5 +30,5 @@
 */src/main/webapp/tmp
 .git
 /temp
-/ent-portal-dmo-master/*.bak
+out/*
 **/*.bak
