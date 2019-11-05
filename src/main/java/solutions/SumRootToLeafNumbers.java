@@ -1,11 +1,7 @@
 package solutions;
 
-import org.leetcode.domain.TreeNode;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import domain.TreeNode;
 
 /**
  * Given a binary tree containing digits from 0-9 only, each root-to-leaf path could represent a number.

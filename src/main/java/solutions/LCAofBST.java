@@ -1,6 +1,6 @@
 package solutions;
 
-import org.leetcode.domain.TreeNode;
+import domain.TreeNode;
 
 public class LCAofBST {
 	public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {

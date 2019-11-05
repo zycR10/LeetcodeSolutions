@@ -1,6 +1,6 @@
 package solutions;
 
-import org.leetcode.domain.ListNode;
+import domain.ListNode;
 
 public class RemoveNthNodeFromEndOfList {
 	public ListNode removeNthFromEnd(ListNode head, int n) {

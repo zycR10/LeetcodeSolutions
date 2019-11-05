@@ -1,6 +1,6 @@
 package solutions;
 
-import org.leetcode.domain.TreeNode;
+import domain.TreeNode;
 
 /**
  * Given inorder and postorder traversal of a tree, construct the binary tree.

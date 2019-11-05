@@ -1,6 +1,6 @@
 package solutions;
 
-import org.leetcode.domain.ListNode;
+import domain.ListNode;
 
 public class MergeTwoSortedLists {
 	public ListNode mergeTwoLists(ListNode l1, ListNode l2) {

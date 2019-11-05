@@ -1,6 +1,6 @@
 package solutions;
 
-import org.leetcode.domain.Interval;
+import domain.Interval;
 
 import java.util.*;
 

@@ -1,11 +1,8 @@
 package solutions;
 
-import org.leetcode.domain.ListNode;
-import org.leetcode.domain.ListNodeUtils;
-import org.leetcode.domain.TreeNode;
-
-import java.util.LinkedList;
-import java.util.List;
+import domain.ListNode;
+import domain.ListNodeUtils;
+import domain.TreeNode;
 
 /**
  * Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.

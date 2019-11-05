@@ -2,8 +2,8 @@ package solutions;
 
 import java.io.IOException;
 
-import org.leetcode.domain.ListNode;
-import org.leetcode.domain.ListNodeUtils;
+import domain.ListNode;
+import domain.ListNodeUtils;
 
 public class SwapNodesinPairs {
 	// public ListNode swapPairs(ListNode head) {

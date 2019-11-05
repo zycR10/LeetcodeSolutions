@@ -1,6 +1,6 @@
 package solutions;
 
-import org.leetcode.domain.TreeNode;
+import domain.TreeNode;
 
 import java.util.*;
 

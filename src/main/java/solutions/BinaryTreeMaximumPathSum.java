@@ -1,6 +1,6 @@
 package solutions;
 
-import org.leetcode.domain.TreeNode;
+import domain.TreeNode;
 
 /**
  * Given a non-empty binary tree, find the maximum path sum.

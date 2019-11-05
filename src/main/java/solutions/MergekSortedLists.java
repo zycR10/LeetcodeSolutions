@@ -1,6 +1,7 @@
 package solutions;
 
-import org.leetcode.domain.ListNode;
+
+import domain.ListNode;
 
 public class MergekSortedLists {
 	public ListNode mergeKLists(ListNode[] lists) {
