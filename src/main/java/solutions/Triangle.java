@@ -20,6 +20,13 @@ import java.util.List;
  */
 public class Triangle {
     public int minimumTotal(List<List<Integer>> triangle) {
-
+        int[] array = new int[triangle.size()];
+        for (int i = triangle.size() - 1; i >= 0; i--) {
+            //dp
+            for (int j = 0; j < triangle.get(i).size(); j++) {
+                array[j] = Math.min(array[j], array[j + 1]) + triangle.get(i).get(j);
+            }
+        }
+        return array[0];
     }
 }
