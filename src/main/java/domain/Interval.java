@@ -4,6 +4,7 @@ package domain;
  * @Author: Zuo Yichen
  * @Date: 2019/1/4 16:17
  */
+
 public class Interval {
     public int start;
     public int end;
