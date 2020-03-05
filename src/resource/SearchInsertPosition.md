@@ -15,26 +15,31 @@ Input: [1,3,5,6], 2
 Output: 1
 
 ## 思路
-题目目标非常清晰，给定数组和目标值寻找下标，属于标准的二分查找算法范围，需要额外处理的就是数组中没有该元素的情况下返回应插入位置的数组下标，其实观察一下不难发现，二分查找最后会找到所有小于target的元素中最大的那一个，所以下一位的数组下标就应该是目标值的插入位置。
+题目目标非常清晰，给定数组和目标值寻找下标，属于标准的二分查找算法范围，需要额外处理的就是数组中没有该元素的情况下返回应插入位置的数组下标，其实观察一下不难发现，查找到最后一个数字的时候，如果该元素大于等于目标值的话，那么目标值插入左边界位置即可，如果该元素小于目标值则需要插入后一位，也就是左边界值+1即可。
 
 ## talk is cheap, show me the code
 ```
 public int searchInsert(int[] nums, int target) {
-	int low = 0;
-	int high = nums.length - 1;
-		
-	// make sure not overflow
-	int middle = (high - low) / 2 + low;
-	while (low <= high) {
-		if (nums[middle] == target) {
-			return middle;
-		}			
-        if (nums[middle] < target) {
-			low = middle + 1;
-		} else {
-    		high = middle - 1;
-		}
-	}
-	return low;	
-}
+        int low = 0;
+        int high = nums.length - 1;
+
+        // make sure not overflow
+        int middle = (high - low) / 2 + low;
+        while (low < high) {
+            if (nums[middle] == target) {
+                return middle;
+            }
+            if (nums[middle] < target) {
+                low = middle + 1;
+            } else {
+                high = middle - 1;
+            }
+            middle = (high - low) / 2 + low;
+        }
+        if (nums[low] >= target) {
+            return low;
+        } else {
+            return low + 1;
+        }
+    }
 ```
