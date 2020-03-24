@@ -9,4 +9,5 @@
 [2.three sum](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/3Sum.md)  
 [3.Search in Rotated Sorted Array](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/SearchRotatedSortedArray.md)  
 [4.Find First and Last Position of Element in Sorted Array](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/FindFirstAndLastPositionOfElementinSortedArray.md)  
-[5.Search Insert Position](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/SearchInsertPosition.md)
+[5.Search Insert Position](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/SearchInsertPosition.md) 
+[6.Combination Sum](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/CombinationSum.md)
