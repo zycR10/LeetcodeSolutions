@@ -11,3 +11,4 @@
 [4.Find First and Last Position of Element in Sorted Array](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/FindFirstAndLastPositionOfElementinSortedArray.md)  
 [5.Search Insert Position](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/SearchInsertPosition.md) 
 [6.Combination Sum](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/CombinationSum.md)
+[6.Combination Sum II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/CombinationSumII.md)
