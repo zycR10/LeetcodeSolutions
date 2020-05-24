@@ -6,10 +6,13 @@
 ---
 ## 数组
 [1.Two Sum](https://github.com/zycR10/LeetcodeSolutions/tree/master/src/resource/TwoSum.md)  
-[2.Three Sum](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/3Sum.md)  
-[3.Search in Rotated Sorted Array](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/SearchRotatedSortedArray.md)  
-[4.Find First and Last Position of Element in Sorted Array](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/FindFirstAndLastPositionOfElementinSortedArray.md)  
-[5.Search Insert Position](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/SearchInsertPosition.md)  
-[6.Combination Sum](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/CombinationSum.md)  
-[7.Combination Sum II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/CombinationSumII.md)  
-[8.Rotate Image](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/RotateImage.md)
+[15.Three Sum](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/3Sum.md)  
+[33.Search in Rotated Sorted Array](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/SearchRotatedSortedArray.md)  
+[34.Find First and Last Position of Element in Sorted Array](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/FindFirstAndLastPositionOfElementinSortedArray.md)  
+[35.Search Insert Position](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/SearchInsertPosition.md)  
+[39.Combination Sum](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/CombinationSum.md)  
+[40.Combination Sum II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/CombinationSumII.md)  
+[48.Rotate Image](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/RotateImage.md)  
+
+## 字符串
+[3.Longest Substring Without Repeating Characters](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/LongestSubstringWithoutRepeatingCharacters.md)  

@@ -32,4 +32,4 @@
 /temp
 out/*
 **/*.bak
-*/src/main/java/review
+/src/main/java/review
