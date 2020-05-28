@@ -16,3 +16,4 @@
 
 ## 字符串
 [3.Longest Substring Without Repeating Characters](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/LongestSubstringWithoutRepeatingCharacters.md)  
+[5.Longest Palindromic Substring](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/LongestPalindromicSubstring.md)  
