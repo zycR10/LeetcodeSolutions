@@ -21,5 +21,4 @@
 
 ## 链表
 [19. Remove Nth Node From End of List](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/RemoveNodeFromEndList.md)
-
-test new pc
+[21. Merge Two Sorted Lists](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/resource/MergeTwoSortedLists.md)
