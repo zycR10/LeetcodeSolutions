@@ -8,6 +8,7 @@ import java.nio.file.Paths;
 
 public class FileGenerator {
     public static void main(String[] args) {
+
         if (args == null || args.length == 0) {
             throw new IllegalArgumentException("args can't be null");
         }
@@ -22,7 +23,10 @@ public class FileGenerator {
 
             if (url == null) {
                 try {
-                    Path path = Paths.get("D:\\github\\LeetcodeSolutions\\src\\main\\resource\\" + fileName);
+                    String jarPath = this.getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
+                    String filePath = jarPath.substring(1, jarPath.lastIndexOf("/")) + "/";
+                    System.out.println("output filepath : " + filePath);
+                    Path path = Paths.get(filePath + fileName);
                     StringBuilder sb = new StringBuilder();
                     sb.append("# " + name + "\r\n").append("## 题目 \r\n").append("## 思路 \r\n").append("## 实现 \r\n");
                     Files.write(path, sb.toString().getBytes());
