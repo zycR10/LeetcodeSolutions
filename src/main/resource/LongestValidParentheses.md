@@ -45,3 +45,29 @@ s[i] = ')' s[i-1] = ')'
 
 
 ## 实现 
+```
+方法一：利用栈操作
+    public int longestValidParentheses(String s) {
+        if (s == null || s.isEmpty()) {
+            return 0;
+        }
+        int max = 0;
+        Stack<Integer> stack = new Stack<>();
+        stack.push(-1);
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c == '(') {
+                stack.push(i);
+            } else {
+                stack.pop();
+                // c is not '(' and stack is empty means string is start with n ')'
+                if (stack.isEmpty()) {
+                    stack.push(i);
+                } else {
+                    max = Math.max(i - stack.peek(), max);
+                }
+            }
+        }
+        return max;
+    }
+```
