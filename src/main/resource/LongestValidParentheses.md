@@ -47,7 +47,7 @@ s[i] = ')' s[i-1] = ')'
 ## 实现 
 ```
 方法一：利用栈操作
-    public int longestValidParentheses(String s) {
+    public int longestValidParenthesesI(String s) {
         if (s == null || s.isEmpty()) {
             return 0;
         }
@@ -66,6 +66,69 @@ s[i] = ')' s[i-1] = ')'
                 } else {
                     max = Math.max(i - stack.peek(), max);
                 }
+            }
+        }
+        return max;
+    }
+```
+
+```
+方法二：动态规划（较复杂）
+public int longestValidParenthesesII(String s) {
+        if (s == null || s.isEmpty()) {
+            return 0;
+        }
+        int max = 0;
+        int[] dp = new int[s.length()];
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c == ')') {
+                if (s.charAt(i - 1) == '(') {
+                    dp[i] = (i >= 2 ? dp[i - 2] : 0) + 2;
+                } else if (i - dp[i - 1] > 0 && s.charAt(i - dp[i - 1] - 1) == '(') {
+                    dp[i] = dp[i - 1] + dp[i - dp[i - 1] - 2] + 2;
+                }
+                max = Math.max(max, dp[i]);
+            }
+        }
+        return max;
+    }
+```
+
+```
+方法三：左右各遍历一次(适用性不强，仅针对当前题目)
+    public int longestValidParenthesesIII(String s) {
+        if (s == null || s.isEmpty()) {
+            return 0;
+        }
+        int max = 0;
+        int leftCount = 0;
+        int rightCount = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c == '(') {
+                leftCount ++;
+            } else {
+                rightCount ++;
+            }
+            if (leftCount == rightCount) {
+                max = Math.max(max, leftCount * 2);
+            } else if (leftCount < rightCount) {
+                leftCount = rightCount = 0;
+            }
+        }
+
+        for (int i = s.length() - 1; i >= 0; i--) {
+            char c = s.charAt(i);
+            if (c == '(') {
+                leftCount ++;
+            } else {
+                rightCount ++;
+            }
+            if (leftCount == rightCount) {
+                max = Math.max(max, leftCount * 2);
+            } else if (leftCount > rightCount) {
+                leftCount = rightCount = 0;
             }
         }
         return max;
