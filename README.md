@@ -12,6 +12,7 @@
 [35.Search Insert Position](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SearchInsertPosition.md)  
 [39.Combination Sum](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/CombinationSum.md)  
 [40.Combination Sum II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/CombinationSumII.md)  
+[41. First Missing Positive](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/FirstMissingPositive.md)  
 [48.Rotate Image](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/RotateImage.md)  
 
 ## 字符串
