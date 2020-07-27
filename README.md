@@ -12,7 +12,8 @@
 [35.Search Insert Position](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SearchInsertPosition.md)  
 [39.Combination Sum](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/CombinationSum.md)  
 [40.Combination Sum II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/CombinationSumII.md)  
-[41. First Missing Positive](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/FirstMissingPositive.md)  
+[41.First Missing Positive](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/FirstMissingPositive.md)  
+[45.Jump Game II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/JumpGameII.md)  
 [48.Rotate Image](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/RotateImage.md)  
 
 ## 字符串
@@ -28,6 +29,7 @@
 
 ## 回溯
 [22. Generate Parentheses](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/GenerateParentheses.md)
+[46. Permutations](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/Permutations.md)  
 
 ## 动态规划
 [32. Longest Valid Parentheses](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LongestValidParentheses.md)
