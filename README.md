@@ -30,7 +30,7 @@
 ## 回溯
 [22. Generate Parentheses](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/GenerateParentheses.md)
 [46. Permutations](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/Permutations.md)  
-[46. Permutations](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/PermutationII.md)  
+[46. PermutationsII](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/PermutationII.md)  
 
 ## 动态规划
 [32. Longest Valid Parentheses](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LongestValidParentheses.md)
