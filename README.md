@@ -35,3 +35,6 @@
 
 ## 动态规划
 [32. Longest Valid Parentheses](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LongestValidParentheses.md)
+
+## 贪心算法
+[55.Jump Game II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/JumpGame.md) 
