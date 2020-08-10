@@ -16,6 +16,7 @@
 [45.Jump Game II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/JumpGameII.md)  
 [48.Rotate Image](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/RotateImage.md)  
 [48.Group Anagrams](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/GroupAnagrams.md)  
+[48.Maximum Subarray](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/MaximumSubarray.md)  
 
 ## 字符串
 [3.Longest Substring Without Repeating Characters](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LongestSubstringWithoutRepeatingCharacters.md)  
