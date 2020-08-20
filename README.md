@@ -35,7 +35,10 @@
 [46. PermutationsII](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/PermutationII.md)  
 
 ## 动态规划
-[32. Longest Valid Parentheses](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LongestValidParentheses.md)
+[32. Longest Valid Parentheses](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LongestValidParentheses.md)  
+[62. Unique Paths](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/UniquePaths.md)  
+[63. Unique PathsII](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/UniquePathsII.md)  
+[64. Minimum Path Sum](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/MinimumPathSum.md)  
 
 ## 贪心算法
 [55.Jump Game II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/JumpGame.md) 
