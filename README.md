@@ -19,6 +19,7 @@
 [53.Maximum Subarray](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/MaximumSubarray.md)  
 [73.Set Matrix Zeros](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SetMaxtrixZeros.md)  
 [74. Search a 2D Matrix](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SearchMatrix.md)  
+[75. Sort Colors](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SortColors.md)  
 
 ## 字符串
 [3.Longest Substring Without Repeating Characters](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LongestSubstringWithoutRepeatingCharacters.md)  
