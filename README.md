@@ -31,7 +31,8 @@
 [19. Remove Nth Node From End of List](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/RemoveNodeFromEndList.md)  
 [21. Merge Two Sorted Lists](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/MergeTwoSortedLists.md)  
 [23. Merge k Sorted Lists](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/MergeKsortedLists.md)  
-[24. Swap Nodes in Pairs](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SwapNodeInPairs.md)
+[24. Swap Nodes in Pairs](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SwapNodeInPairs.md)  
+[83. Remove Duplicates from Sorted List](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/RemoveDuplicatesFromSortedList.md)  
 
 ## 回溯
 [22. Generate Parentheses](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/GenerateParentheses.md)
