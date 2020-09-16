@@ -53,5 +53,5 @@
 ## 贪心算法
 [55.Jump Game II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/JumpGame.md) 
 
-## 递归
+## 树
 [98. Validate Binary Search Tree](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/ValidateBinarySearchTree.md) 
