@@ -55,3 +55,4 @@
 
 ## 树
 [98. Validate Binary Search Tree](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/ValidateBinarySearchTree.md) 
+[100. Same Tree](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SameTree.md) 
