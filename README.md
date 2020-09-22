@@ -58,3 +58,4 @@
 [100. Same Tree](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SameTree.md) 
 [101. Symmetric Tree](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SymmetricTree.md) 
 [103. Binary Tree Zigzag Level Order Traversal](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/BinaryTreeZigzagLevelOrderTraversal.md) 
+[104. Maximum Depth of Binary Tree](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/MaximumDepthBinaryTree.md) 
