@@ -60,3 +60,5 @@
 [103. Binary Tree Zigzag Level Order Traversal](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/BinaryTreeZigzagLevelOrderTraversal.md) 
 [104. Maximum Depth of Binary Tree](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/MaximumDepthBinaryTree.md) 
 [105. Construct Binary Tree from Preorder and Inorder Traversal](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/ConstructByPreorderAndInorderTraversal.md) 
+[106. Construct Binary Tree from Inorder and Postorder Traversal](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/ConstructByInorderAndPostorderTraversal.md) 
+[107. Binary Tree Level Order Traversal II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/BinaryTreeLevelOrderTraversalII.md) 
