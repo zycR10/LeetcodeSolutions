@@ -66,3 +66,5 @@
 [108. Convert Sorted Array to Binary Search Tree](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/ConvertSortedArrayToBST.md) 
 [109. Convert Sorted List to Binary Search Tree](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/ConvertSortedListToBST.md) 
 [110. Balanced Binary Tree](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/BalancedBinaryTree.md) 
+[112. Path Sum](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/PathSum.md) 
+[113. Path Sum II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/PathSumII.md) 
