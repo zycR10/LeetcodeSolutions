@@ -68,3 +68,4 @@
 [110. Balanced Binary Tree](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/BalancedBinaryTree.md) 
 [112. Path Sum](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/PathSum.md) 
 [113. Path Sum II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/PathSumII.md) 
+[114. Flatten Binary Tree to Linked List](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/FlatternBinaryTreeToLinkedList.md) 
