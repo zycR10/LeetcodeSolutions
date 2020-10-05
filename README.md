@@ -22,6 +22,7 @@
 [75. Sort Colors](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SortColors.md)  
 [79. Word Search](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/WordSearch.md)  
 [118. Pascal's Triangle](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/PascalTriangle.md)  
+[118. Pascal's Triangle II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/PascalTriangleII.md)  
 
 ## 字符串
 [3.Longest Substring Without Repeating Characters](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LongestSubstringWithoutRepeatingCharacters.md)  
