@@ -24,6 +24,7 @@
 [118. Pascal's Triangle](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/PascalTriangle.md)  
 [119. Pascal's Triangle II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/PascalTriangleII.md)  
 [121. Best Time to Buy and Sell Stock](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/BestTimeTradeStock.md)  
+[122. Best Time to Buy and Sell Stock II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/BestTimeTradeStockII.md)  
 
 ## 字符串
 [3.Longest Substring Without Repeating Characters](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LongestSubstringWithoutRepeatingCharacters.md)  
