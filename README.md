@@ -26,6 +26,7 @@
 [121. Best Time to Buy and Sell Stock](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/BestTimeTradeStock.md)  
 [122. Best Time to Buy and Sell Stock II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/BestTimeTradeStockII.md)  
 [122. Best Time to Buy and Sell Stock III](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/BestTimeTradeStockIII.md)  
+[128. Longest Consecutive Sequence](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LongestConsecutiveSequence.md)  
 
 ## 字符串
 [3.Longest Substring Without Repeating Characters](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LongestSubstringWithoutRepeatingCharacters.md)  
@@ -75,3 +76,4 @@
 [112. Path Sum](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/PathSum.md) 
 [113. Path Sum II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/PathSumII.md) 
 [114. Flatten Binary Tree to Linked List](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/FlatternBinaryTreeToLinkedList.md) 
+[129. Sum Root to Leaf Numbers](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SumRootToLeafNumbers.md) 
