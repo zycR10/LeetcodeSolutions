@@ -48,6 +48,7 @@
 [77. Combinations](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/Combinations.md)  
 [78. Subsets](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/Subsets.md)  
 [90. SubsetsII](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SubsetsII.md)  
+[131. Palindrome Partitioning](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/PalindromePartitioning.md)  
 
 ## 动态规划
 [32. Longest Valid Parentheses](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LongestValidParentheses.md)  
