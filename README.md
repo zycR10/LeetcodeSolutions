@@ -42,6 +42,7 @@
 [24. Swap Nodes in Pairs](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SwapNodeInPairs.md)  
 [83. Remove Duplicates from Sorted List](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/RemoveDuplicatesFromSortedList.md)  
 [92. Reverse Linked List II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/ReverseLinkedListII.md)  
+[141. Linked List Cycle](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LinkedListCycle.md)  
 
 ## 回溯
 [22. Generate Parentheses](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/GenerateParentheses.md)
