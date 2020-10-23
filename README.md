@@ -25,8 +25,10 @@
 [119. Pascal's Triangle II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/PascalTriangleII.md)  
 [121. Best Time to Buy and Sell Stock](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/BestTimeTradeStock.md)  
 [122. Best Time to Buy and Sell Stock II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/BestTimeTradeStockII.md)  
-[122. Best Time to Buy and Sell Stock III](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/BestTimeTradeStockIII.md)  
+[123. Best Time to Buy and Sell Stock III](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/BestTimeTradeStockIII.md)  
 [128. Longest Consecutive Sequence](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LongestConsecutiveSequence.md)  
+[136. Single Number](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SingleNumber.md)  
+[136. Single Number II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SingleNumberII.md)  
 
 ## 字符串
 [3.Longest Substring Without Repeating Characters](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LongestSubstringWithoutRepeatingCharacters.md)  
@@ -40,6 +42,8 @@
 [24. Swap Nodes in Pairs](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SwapNodeInPairs.md)  
 [83. Remove Duplicates from Sorted List](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/RemoveDuplicatesFromSortedList.md)  
 [92. Reverse Linked List II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/ReverseLinkedListII.md)  
+[141. Linked List Cycle](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LinkedListCycle.md)  
+[142. Linked List Cycle II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LinkedListCycleII.md)  
 
 ## 回溯
 [22. Generate Parentheses](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/GenerateParentheses.md)
