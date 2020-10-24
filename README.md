@@ -44,6 +44,7 @@
 [92. Reverse Linked List II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/ReverseLinkedListII.md)  
 [141. Linked List Cycle](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LinkedListCycle.md)  
 [142. Linked List Cycle II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LinkedListCycleII.md)  
+[143. Reorder List](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/ReorderList.md)  
 
 ## 回溯
 [22. Generate Parentheses](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/GenerateParentheses.md)
