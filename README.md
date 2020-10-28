@@ -63,6 +63,7 @@
 [64. Minimum Path Sum](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/MinimumPathSum.md)  
 [96. Unique Binary Search Trees](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/UniqueBinarySearchTrees.md)  
 [120. Triangle](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/Triangle.md)  
+[152. Maximum Product Subarray](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/MaximumProductSubarray.md)  
 
 ## 贪心算法
 [55.Jump Game II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/JumpGame.md) 
