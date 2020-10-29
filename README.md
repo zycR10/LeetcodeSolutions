@@ -28,7 +28,8 @@
 [123. Best Time to Buy and Sell Stock III](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/BestTimeTradeStockIII.md)  
 [128. Longest Consecutive Sequence](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LongestConsecutiveSequence.md)  
 [136. Single Number](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SingleNumber.md)  
-[136. Single Number II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SingleNumberII.md)  
+[137. Single Number II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SingleNumberII.md)  
+[153. Find Minimum in Rotated Sorted Array](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/FindMinimumRotatedSortedArray.md)  
 
 ## 字符串
 [3.Longest Substring Without Repeating Characters](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LongestSubstringWithoutRepeatingCharacters.md)  
