@@ -30,6 +30,7 @@
 [136. Single Number](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SingleNumber.md)  
 [137. Single Number II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SingleNumberII.md)  
 [153. Find Minimum in Rotated Sorted Array](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/FindMinimumRotatedSortedArray.md)  
+[154. Find Minimum in Rotated Sorted ArrayII](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/FindMinimumRotatedSortedArrayII.md)  
 
 ## 字符串
 [3.Longest Substring Without Repeating Characters](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LongestSubstringWithoutRepeatingCharacters.md)  
