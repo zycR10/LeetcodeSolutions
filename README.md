@@ -48,6 +48,7 @@
 [142. Linked List Cycle II](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LinkedListCycleII.md)  
 [143. Reorder List](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/ReorderList.md)  
 [148. Sort List](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SortList.md)  
+[160. Intersection of Two Linked Lists](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/IntersectionTwoLinkedLists.md)  
 
 ## 回溯
 [22. Generate Parentheses](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/GenerateParentheses.md)
