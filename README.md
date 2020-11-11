@@ -32,6 +32,7 @@
 [153. Find Minimum in Rotated Sorted Array](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/FindMinimumRotatedSortedArray.md)  
 [154. Find Minimum in Rotated Sorted ArrayII](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/FindMinimumRotatedSortedArrayII.md)  
 [167. Two Sum II - Input array is sorted](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/TwoSumIIArraySorted.md)  
+[169. Majority Element](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/MajorityElement.md)  
 
 ## 字符串
 [3.Longest Substring Without Repeating Characters](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/LongestSubstringWithoutRepeatingCharacters.md)  
