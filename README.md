@@ -91,3 +91,4 @@
 [114. Flatten Binary Tree to Linked List](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/FlatternBinaryTreeToLinkedList.md)   
 [124. Binary Tree Maximum Path Sum](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/BinaryTreeMaxPathSum.md)  
 [129. Sum Root to Leaf Numbers](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/SumRootToLeafNumbers.md)  
+[173. Binary Search Tree Iterator](https://github.com/zycR10/LeetcodeSolutions/blob/master/src/main/resource/BinarySearchTreeIterator.md)  
